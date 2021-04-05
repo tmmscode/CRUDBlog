@@ -4,7 +4,7 @@ import com.tmmcod.blog.model.Post;
 
 import java.util.List;
 
-public interface tmmcodblog {
+public interface TmmcodblogService {
 
     List<Post> findAll ();
     Post findById (long id);
