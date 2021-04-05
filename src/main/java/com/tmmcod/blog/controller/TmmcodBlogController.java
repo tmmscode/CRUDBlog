@@ -19,15 +19,6 @@ public class TmmcodBlogController {
     @Autowired
     TmmcodblogService tmmcodblogService;
 
-/*    @RequestMapping (value = "/posts", method = RequestMethod.GET)
-    public ModelAndView getPosts () {
-        ModelAndView mv = new ModelAndView("posts");
-        List<Post> posts = tmmcodblogService.findAll ();
-        mv.addObject("posts", posts);
-        return mv;
-
-    }*/
-
     @GetMapping ("/posts")
     public ModelAndView getPosts () {
         ModelAndView mv = new ModelAndView("posts");
