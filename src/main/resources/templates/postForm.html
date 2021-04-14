@@ -18,9 +18,9 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light" style="height: 60px">
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1" style="font-weight:bold;">My test blog</span>
+            <span class="navbar-brand mb-0 h1" style="font-weight:bold;">TMMS cards</span>
         </div>
     </nav>
 </header>
@@ -39,19 +39,20 @@
         <div>
             <th:block th:include="msgValidacao"></th:block>
             <form method="post">
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <input type="text" class="form-control" name="titulo" placeholder="Título *">
                 </div>
-                <div class="form-group">
+
+                <div class="form-group mb-3">
                     <input type="text" class="form-control" name="autor" placeholder="Autor *">
                 </div>
 
-                <textarea id="summernote" typeof="text" class="form-control" name="texto" placeholder="Texto *"></textarea>
+                <textarea id="summernote" typeof="text" class="form-control mb-3" name="texto" placeholder="Texto *"></textarea>
 
-                <email class="form-text text-muted">(*) Campos Obrigatórios</email>
+                <email class="form-text text-muted mb-3">(*) Campos Obrigatórios</email> </br>
 
-                <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Publicar</button>
-                <a href="/blog/posts" class="btn btn-light" role="button" style="margin-top: 10px;">Cancelar</a>
+                <button type="submit" class="btn btn-primary mb-3 mr-3">Publicar</button>
+                <a href="/blog/posts"><div class="btn btn-secondary mb-3">Cancelar</div></a>
             </form>
         </div>
 
