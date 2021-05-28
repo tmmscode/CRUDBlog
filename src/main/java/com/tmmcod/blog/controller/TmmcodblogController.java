@@ -63,5 +63,10 @@ public class TmmcodblogController {
         return "redirect:/blog/posts";
     }
 
+    /* TODO: Criar endpoint para update e delete dos posts
+    *   (em andamento)*/
+
+
+
 
 }
