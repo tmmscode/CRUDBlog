@@ -41,6 +41,9 @@
             <section>
                 <p class="card-text" style="margin-top: 40px;"><span th:utext="${post.texto}"></span></p>
             </section>
+            <div style="margin-top:20px; display: flex; justify-content: flex-end" >
+            <a th:href="@{/blog/postEdit/{id}(id=${post.id})}" class="btn btn-primary"  role="button">Editar</a>
+            </div>
         </article>
     </div>
 </main>
