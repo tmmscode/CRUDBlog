@@ -60,7 +60,7 @@ public class TmmcodblogController {
             return "redirect:/blog/newpost";
         }
 
-        if (post.getTitulo().length() < 5 || post.getAutor().length() < 1 || post.getTexto().length() < 20){
+        if (post.getTitulo().length() < 5 || post.getAutor().length() < 1 || post.getTexto().length() < 10){
             // Validar tamanho dos campos
             attributes.addFlashAttribute("mensagem", "Existem campos com dados inconsistentes");
             return "redirect:/blog/newpost";
@@ -84,19 +84,17 @@ public class TmmcodblogController {
         return "redirect:/blog/posts";
     }
 
+
     /* TODO: Criar endpoint para delete dos posts
     *   (em andamento)*/
 
 
+    @GetMapping("/deletePost/{id}")
+    public String deletePost(@PathVariable("id") long id, Model model) {
+        tmmcodblogService.delete(id);
+        return "redirect:/blog/posts";
+    }
 
-/*    @PutMapping ("/posts/{id}")
-    public ModelAndView getPostDetails (@PathVariable("id") long id) {
-        ModelAndView mv = new ModelAndView("postDetails");
-        Post post = tmmcodblogService.findById(id);
-        mv.addObject("post", post);
-        return mv;
-
-    }*/
 
 
 }

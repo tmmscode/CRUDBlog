@@ -40,14 +40,14 @@
             <th:block th:include="msgValidacao"></th:block>
             <form method="post">
                 <div class="form-group mb-3">
-                    <input type="text" class="form-control" name="titulo" placeholder="Título *">
+                    <input type="text" class="form-control" name="titulo" placeholder="Título * (Mín. 5 caracteres)">
                 </div>
 
                 <div class="form-group mb-3">
-                    <input type="text" class="form-control" name="autor" placeholder="Autor *">
+                    <input type="text" class="form-control" name="autor" placeholder="Autor * (Mín. 1 caracteres)">
                 </div>
 
-                <textarea id="summernote" typeof="text" class="form-control mb-3" name="texto" placeholder="Texto *"></textarea>
+                <textarea id="summernote" typeof="text" class="form-control mb-3" name="texto" placeholder="Texto * (Mín. 10 caracteres)"></textarea>
 
                 <email class="form-text text-muted mb-3">(*) Campos Obrigatórios</email> </br>
 

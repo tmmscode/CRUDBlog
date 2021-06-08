@@ -26,4 +26,7 @@ public class TmmcodblogServiceImpl implements TmmcodblogService {
     public Post save(Post post) {
         return blogRepo.save(post);
     }
+
+    @Override
+    public void delete(long id) { blogRepo.deleteById(id); }
 }

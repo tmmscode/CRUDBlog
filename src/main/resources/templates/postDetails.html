@@ -44,6 +44,9 @@
             <div style="margin-top:20px; display: flex; justify-content: flex-end" >
             <a th:href="@{/blog/postEdit/{id}(id=${post.id})}" class="btn btn-primary"  role="button">Editar</a>
             </div>
+            <div style="margin-top:20px; display: flex; justify-content: flex-end" >
+                <a th:href="@{/blog/deletePost/{id}(id=${post.id})}" class="btn btn-secondary"  role="button">Excluir</a>
+            </div>
         </article>
     </div>
 </main>
